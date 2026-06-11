@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.svglogos.dev/logos/model-context-protocol-icon.svg"
+      type="image/x-icon"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Untilted UI</title>
+  </head>
+
+  <body class="mx-auto bg-[#FEFEFE] text-neutral-800 lg:container lg:pt-12">
+    <nav
+      class="flex items-center justify-between bg-white p-3 ring ring-neutral-300 lg:rounded-full"
+    >
+      <div class="flex items-center gap-10">
+        <a class="flex items-center gap-2" href="#">
+          <img
+            src="https://cdn.svglogos.dev/logos/model-context-protocol-icon.svg"
+            alt="Company Logo"
+            class="size-6 lg:size-8"
+          />
+          <h1 class="text-xl font-bold lg:text-2xl">Untilted UI</h1>
+        </a>
+        <ul class="hidden items-center gap-5 md:flex">
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#Pricing">Pricing</a></li>
+          <li><a href="#FAQs">FAQs</a></li>
+          <li><a href="#Products">Products</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="#Contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="hidden items-center gap-4 md:flex">
+        <button
+          class="cursor-pointer rounded-full px-5 py-2 ring-2 ring-neutral-300 transition-colors hover:bg-slate-100/50"
+        >
+          <span class="font-semibold text-neutral-800"> Sign in </span>
+        </button>
+        <button
+          class="cursor-pointer rounded-full bg-neutral-900 px-5 py-2 font-medium text-slate-100 transition-colors hover:bg-neutral-800"
+        >
+          Get started
+        </button>
+      </div>
+      <i data-lucide="menu" class="relative top-px block size-6 md:hidden"></i>
+    </nav>
+    <main class="lg:mt-20">
+      <section class="flex flex-col gap-10">
+        <div
+          class="flex items-center justify-between gap-3 border border-neutral-300 bg-slate-100/30 p-1 pr-4 lg:w-fit lg:rounded-full lg:bg-transparent"
+        >
+          <div
+            class="flex items-center gap-2 rounded-full px-3 py-1 ring-neutral-300 lg:ring"
+          >
+            <span class="relative flex size-3">
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex size-3 rounded-full bg-emerald-500"
+              ></span>
+            </span>
+            <span class="font-semibold">What's new?</span>
+          </div>
+          <div class="flex items-center gap-1.5 text-neutral-600">
+            <span>Xero Integration</span>
+            <i data-lucide="arrow-right" class="relative top-px size-4"></i>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10 px-3 lg:px-0">
+          <div
+            class="flex flex-col items-center justify-center gap-6 md:items-start md:gap-8"
+          >
+            <h1
+              class="text-center text-4xl font-semibold md:text-left md:text-6xl"
+            >
+              Everything you need to sell, <br class="hidden lg:flex" />
+              scale, and succed online.
+            </h1>
+            <p class="text-center text-neutral-600 md:text-left md:text-xl">
+              From digital products to subscription and SaaS, Untilted UI gives
+              you the tools to <br />
+              launch fast and grow with confidence
+            </p>
+          </div>
+          <div
+            class="mt-5 flex flex-col items-center justify-between gap-4 md:flex-row lg:gap-6"
+          >
+            <div
+              class="flex w-full flex-col-reverse gap-4 md:flex-row lg:gap-6"
+            >
+              <button
+                class="cursor-pointer rounded-full bg-neutral-900 px-8 py-2 text-xl font-medium text-slate-100 transition-colors hover:bg-neutral-800"
+              >
+                Sart free trial
+              </button>
+              <p class="text-center text-xl text-neutral-500 md:text-left">
+                Get 7 days free <br class="hidden lg:flex" />
+                then 3 months for $1/month
+              </p>
+            </div>
+            <button
+              class="flex w-full cursor-pointer items-center justify-center gap-2 rounded-full px-8 py-2 text-xl font-medium ring-2 ring-neutral-300 transition-colors hover:bg-slate-100/50 md:w-fit"
+            >
+              <i
+                data-lucide="circle-play"
+                class="relative top-px size-6 text-neutral-500"
+              ></i>
+              <span class="whitespace-nowrap">How it works</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
