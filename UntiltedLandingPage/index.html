@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,48 +14,53 @@
     <title>Untilted UI</title>
   </head>
 
-  <body class="mx-auto bg-[#FEFEFE] text-neutral-800 lg:container lg:pt-12">
-    <nav
-      class="flex items-center justify-between bg-white p-3 ring ring-neutral-300 lg:rounded-full"
-    >
-      <div class="flex items-center gap-10">
-        <a class="flex items-center gap-2" href="#">
-          <img
-            src="https://cdn.svglogos.dev/logos/model-context-protocol-icon.svg"
-            alt="Company Logo"
-            class="size-6 lg:size-8"
-          />
-          <h1 class="text-xl font-bold lg:text-2xl">Untilted UI</h1>
-        </a>
-        <ul class="hidden items-center gap-5 md:flex">
-          <li><a href="#Features">Features</a></li>
-          <li><a href="#Pricing">Pricing</a></li>
-          <li><a href="#FAQs">FAQs</a></li>
-          <li><a href="#Products">Products</a></li>
-          <li><a href="#Blog">Blog</a></li>
-          <li><a href="#Contact">Contact us</a></li>
-        </ul>
-      </div>
-      <div class="hidden items-center gap-4 md:flex">
-        <button
-          class="cursor-pointer rounded-full px-5 py-2 ring-2 ring-neutral-300 transition-colors hover:bg-slate-100/50"
-        >
-          <span class="font-semibold text-neutral-800"> Sign in </span>
-        </button>
-        <button
-          class="cursor-pointer rounded-full bg-neutral-900 px-5 py-2 font-medium text-slate-100 transition-colors hover:bg-neutral-800"
-        >
-          Get started
-        </button>
-      </div>
-      <i data-lucide="menu" class="relative top-px block size-6 md:hidden"></i>
-    </nav>
-    <main class="lg:mt-20">
-      <section class="flex flex-col gap-10">
+  <body class="bg-[#FEFEFE] text-neutral-800">
+    <header class="mx-auto lg:container lg:pt-12">
+      <nav
+        class="flex items-center justify-between bg-white p-3 ring ring-neutral-300 lg:rounded-full"
+      >
+        <div class="flex items-center gap-10">
+          <a class="flex items-center gap-2" href="#">
+            <img
+              src="https://cdn.svglogos.dev/logos/model-context-protocol-icon.svg"
+              alt="Company Logo"
+              class="size-6 lg:size-8"
+            />
+            <h1 class="text-xl font-bold lg:text-2xl">Untilted UI</h1>
+          </a>
+          <ul class="hidden items-center gap-5 md:flex">
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Partners">Partners</a></li>
+            <li><a href="#FAQs">FAQs</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Contact">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hidden items-center gap-4 md:flex">
+          <button
+            class="cursor-pointer rounded-full px-5 py-2 ring-2 ring-neutral-300 transition-colors hover:bg-slate-100/50"
+          >
+            <span class="font-semibold text-neutral-800"> Sign in </span>
+          </button>
+          <button
+            class="cursor-pointer rounded-full bg-neutral-900 px-5 py-2 font-medium text-slate-100 transition-colors hover:bg-neutral-800"
+          >
+            Get started
+          </button>
+        </div>
+        <i
+          data-lucide="menu"
+          class="relative top-px block size-6 md:hidden"
+        ></i>
+      </nav>
+    </header>
+    <main class="lg:pt-12">
+      <section class="lg:mt-20 mx-auto lg:container flex flex-col gap-10">
         <div
           class="flex items-center justify-between gap-3 border border-neutral-300 bg-slate-100/30 p-1 pr-4 lg:w-fit lg:rounded-full lg:bg-transparent"
         >
-          <div
+          <announcement
             class="flex items-center gap-2 rounded-full px-3 py-1 ring-neutral-300 lg:ring"
           >
             <span class="relative flex size-3">
@@ -67,7 +72,7 @@
               ></span>
             </span>
             <span class="font-semibold">What's new?</span>
-          </div>
+          </announcement>
           <div class="flex items-center gap-1.5 text-neutral-600">
             <span>Xero Integration</span>
             <i data-lucide="arrow-right" class="relative top-px size-4"></i>
@@ -116,6 +121,301 @@
             </button>
           </div>
         </div>
+        <aside class="relative h-[350px] lg:h-[600px] overflow-y-hidden">
+          <img
+            src="./public/assets/image.png"
+            alt="UI Demo"
+            class="absolute left-0 top-0 mx-auto md:w-[82%] rounded-2xl border border-neutral-200 shadow-2xl shadow-emerald-200/50"
+          />
+
+          <img
+            src="./public/assets/dark.png"
+            alt="UI Demo Dark"
+            class="absolute right-0 -bottom-8 md:top-16 md:w-[55%] rounded-2xl border border-neutral-200 shadow-md"
+          />
+
+          <button
+            class="absolute left-1/2 top-1/2 z-20 -translate-y-1/2 flex size-14 cursor-pointer items-center justify-center rounded-full bg-neutral-500/70 backdrop-blur-sm transition hover:bg-neutral-500/90"
+          >
+            <i data-lucide="play" class="size-6 fill-white text-white"></i>
+          </button>
+        </aside>
+      </section>
+      <hr class="h-px border border-neutral-100" />
+      <section
+        id="Features"
+        aria-label="Features"
+        class="container mx-auto px-3 pt-15 flex flex-col gap-10 lg:pt-20"
+      >
+        <div class="flex flex-col gap-2.5 text-center lg:text-left lg:w-2/5">
+          <h2 class="text-2xl font-medium">
+            The one commerce platform behind it all
+          </h2>
+          <p class="text-neutral-600 lg:text-lg">
+            We've got everything you need to sell locally and globally. You
+            control the pricing and keep all of your revenue -- with no fees.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 grid-rows-2 gap-4 lg:gap-10">
+          <div
+            class="p-6 flex flex-col gap-4 border border-neutral-200 rounded-2xl duration-300 ease-in-out shadow-slate-100 hover:shadow-2xl hover:border-neutral-400"
+          >
+            <div
+              class="grid p-2.5 place-content-center size-fit border border-neutral-200 bg-slate-100/60 p-2 rounded-lg"
+            >
+              <i
+                data-lucide="hand-coins"
+                class="relative top-px size-6 text-neutral-700"
+              ></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-medium">Sell anything</h3>
+              <p class="text-neutral-500">
+                Untilted empowers you to sell anything -- from video lessons and
+                subscriptions to products and digital content -- helping you
+                experiment with any idea and format.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="p-6 flex flex-col gap-4 border border-neutral-200 rounded-2xl duration-300 ease-in-out shadow-slate-100 hover:shadow-2xl hover:border-neutral-400"
+          >
+            <div
+              class="grid p-2.5 place-content-center size-fit border border-neutral-200 bg-slate-100/60 p-2 rounded-lg"
+            >
+              <i
+                data-lucide="users"
+                class="relative top-px size-6 text-neutral-700"
+              ></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-medium">Sell to anyone</h3>
+              <p class="text-neutral-500">
+                Grow your audience with posts, email, newsletters, and automated
+                workflows. Let customers pay what they want or choose one-time
+                or recurring payments.
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-6 flex flex-col gap-4 border border-neutral-200 rounded-2xl duration-300 ease-in-out shadow-slate-100 hover:shadow-2xl hover:border-neutral-400"
+          >
+            <div
+              class="grid p-2.5 place-content-center size-fit border border-neutral-200 bg-slate-100/60 p-2 rounded-lg"
+            >
+              <i
+                data-lucide="earth"
+                class="relative top-px size-6 text-neutral-700"
+              ></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-medium">Sell anywhere</h3>
+              <p class="text-neutral-500">
+                Build a storefront with our all-in-one platform or integrate it
+                with your personal site. Easily connect your Untilted account to
+                thousands of apps through Zapier.
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-6 flex flex-col gap-4 border border-neutral-200 rounded-2xl duration-300 ease-in-out shadow-slate-100 hover:shadow-2xl hover:border-neutral-400"
+          >
+            <div
+              class="grid p-2.5 place-content-center size-fit border border-neutral-200 bg-slate-100/60 p-2 rounded-lg"
+            >
+              <i
+                data-lucide="banknote"
+                class="relative top-px size-6 text-neutral-700"
+              ></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-medium">Stay tax compliant</h3>
+              <p class="text-neutral-500">
+                As your merchant of record, we take care of payment, fees, fraud
+                protection, and sales tax -- so you don't have to. We take care
+                of all the tax compliance.
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-6 flex flex-col gap-4 border border-neutral-200 rounded-2xl duration-300 ease-in-out shadow-slate-100 hover:shadow-2xl hover:border-neutral-400"
+          >
+            <div
+              class="grid p-2.5 place-content-center size-fit border border-neutral-200 bg-slate-100/60 p-2 rounded-lg"
+            >
+              <i
+                data-lucide="zap"
+                class="relative top-px size-6 text-neutral-700"
+              ></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-medium">Automate your SaaS sales</h3>
+              <p class="text-neutral-500">
+                Sell your digital products worlwide instantly. As your merchant
+                of record, we enable payments from 135+ countries with no
+                complex setup required.
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-6 flex flex-col gap-4 border border-neutral-200 rounded-2xl duration-300 ease-in-out shadow-slate-100 hover:shadow-2xl hover:border-neutral-400"
+          >
+            <div
+              class="grid p-2.5 place-content-center size-fit border border-neutral-200 bg-slate-100/60 p-2 rounded-lg"
+            >
+              <i
+                data-lucide="cpu"
+                class="relative top-px size-6 text-neutral-700"
+              ></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-medium">Stop fraud with A.I.</h3>
+              <p class="text-neutral-500">
+                Untilted uses world-class and real-time AI to detect unusual
+                patterns in signups, logins, refunds, and more, keeping you safe
+                from malicious attacks.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 flex flex-col items-center justify-between gap-4 md:flex-row lg:gap-6"
+        >
+          <div class="flex w-full flex-col-reverse gap-4 md:flex-row lg:gap-6">
+            <button
+              class="cursor-pointer rounded-full bg-neutral-900 px-8 py-2 text-xl font-medium text-slate-100 transition-colors hover:bg-neutral-800"
+            >
+              Sart free trial
+            </button>
+            <p class="text-center text-xl text-neutral-500 md:text-left">
+              Get 7 days free <br class="hidden lg:flex" />
+              then 3 months for $1/month
+            </p>
+          </div>
+          <button
+            class="flex w-full cursor-pointer items-center justify-center gap-2 rounded-full px-8 py-2 text-xl font-medium ring-2 ring-neutral-300 transition-colors hover:bg-slate-100/50 md:w-fit"
+          >
+            <i
+              data-lucide="circle-play"
+              class="relative top-px size-6 text-neutral-500"
+            ></i>
+            <span class="whitespace-nowrap">How it works</span>
+          </button>
+        </div>
+      </section>
+      <section id="Partners" aria-label="Partners" class="pt-20 md:px-10">
+        <aside
+          class="size-full bg-slate-100/30 rounded-2xl p-4 md:p-20"
+        >
+          <div class="flex flex-col gap-20 container mx-auto">
+            <div
+              class="flex flex-col gap-2.5 text-center lg:text-left lg:w-2/5"
+            >
+              <h2 class="text-2xl font-medium">Trusted by 4,000+ companies</h2>
+              <p class="text-neutral-600 lg:text-lg">
+                You're in good company. Join thousands of entrepeneurs all over
+                the world who have collectively made over $400m in sales with
+                Untilted UI.
+              </p>
+            </div>
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 grid-rows-2 gap-8">
+              <div
+                class="grid h-[150px] place-content-center rounded-2xl border border-neutral-200 bg-[#FEFEFE] group duration-300 ease-in-out shadow-slate-200 hover:shadow-md hover:border-neutral-400"
+              >
+                <img
+                  src="./public/assets/aselsan-logo.svg"
+                  alt="Aselsan logo"
+                  class="h-20 max-w-[150px] object-contain grayscale duration-400 ease-in-out group-hover:grayscale-0"
+                />
+              </div>
+
+              <div
+                class="grid h-[150px] place-content-center rounded-2xl border border-neutral-200 bg-[#FEFEFE] group duration-300 ease-in-out shadow-slate-200 hover:shadow-md hover:border-neutral-400"
+              >
+                <img
+                  src="./public/assets/lenovo-logo.svg"
+                  alt="Lenovo logo"
+                  class="h-22 max-w-[150px] object-contain grayscale duration-400 ease-in-out group-hover:grayscale-0"
+                />
+              </div>
+
+              <div
+                class="grid h-[150px] place-content-center rounded-2xl border border-neutral-200 bg-[#FEFEFE] group duration-300 ease-in-out shadow-slate-200 hover:shadow-md hover:border-neutral-400"
+              >
+                <img
+                  src="./public/assets/formenta-logo.svg"
+                  alt="Formenta logo"
+                  class="h-20 max-w-[150px] object-contain grayscale duration-400 ease-in-out group-hover:grayscale-0"
+                />
+              </div>
+
+              <div
+                class="grid h-[150px] place-content-center rounded-2xl border border-neutral-200 bg-[#FEFEFE] group duration-300 ease-in-out shadow-slate-200 hover:shadow-md hover:border-neutral-400"
+              >
+                <img
+                  src="./public/assets/pirelli-logo.svg"
+                  alt="Pirelli logo"
+                  class="h-20 max-w-[150px] object-contain grayscale duration-400 ease-in-out group-hover:grayscale-0"
+                />
+              </div>
+
+              <div
+                class="grid h-[150px] place-content-center rounded-2xl border border-neutral-200 bg-[#FEFEFE] group duration-300 ease-in-out shadow-slate-200 hover:shadow-md hover:border-neutral-400"
+              >
+                <img
+                  src="./public/assets/trustpilot-logo.svg"
+                  alt="Trustpilot logo"
+                  class="h-20 max-w-[150px] object-contain grayscale duration-400 ease-in-out group-hover:grayscale-0"
+                />
+              </div>
+
+              <div
+                class="grid h-[150px] place-content-center rounded-2xl border border-neutral-200 bg-[#FEFEFE] group duration-300 ease-in-out shadow-slate-200 hover:shadow-md hover:border-neutral-400"
+              >
+                <img
+                  src="./public/assets/huawei-logo.svg"
+                  alt="Huawei logo"
+                  class="h-20 max-w-[150px] object-contain grayscale duration-400 ease-in-out group-hover:grayscale-0"
+                />
+              </div>
+
+              <div
+                class="grid h-[150px] place-content-center rounded-2xl border border-neutral-200 bg-[#FEFEFE] group duration-300 ease-in-out shadow-slate-200 hover:shadow-md hover:border-neutral-400"
+              >
+                <img
+                  src="./public/assets/shopify-logo.svg"
+                  alt="Shopify logo"
+                  class="h-20 max-w-[150px] object-contain grayscale duration-400 ease-in-out group-hover:grayscale-0"
+                />
+              </div>
+
+              <div
+                class="grid h-[150px] place-content-center rounded-2xl border border-neutral-200 bg-[#FEFEFE] group duration-300 ease-in-out shadow-slate-200 hover:shadow-md hover:border-neutral-400"
+              >
+                <img
+                  src="./public/assets/toyota-logo.svg"
+                  alt="Toyota logo"
+                  class="h-20 max-w-[150px] object-contain grayscale duration-400 ease-in-out group-hover:grayscale-0"
+                />
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+      <section
+        id="Testimonials"
+        aria-label="Testimonials"
+        class="flex items-center justify-between container mx-auto pt-30"
+      >
+        <aside></aside>
+        <img
+          src="https://images.pexels.com/photos/24233283/pexels-photo-24233283.jpeg"
+          alt=""
+          class="w-[400px] rounded-2xl"
+        />
       </section>
     </main>
     <script>
