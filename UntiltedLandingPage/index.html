@@ -307,9 +307,7 @@
         </div>
       </section>
       <section id="Partners" aria-label="Partners" class="pt-20 md:px-10">
-        <aside
-          class="size-full bg-slate-100/30 rounded-2xl p-4 md:p-20"
-        >
+        <aside class="size-full bg-slate-100/30 rounded-2xl p-4 md:p-20">
           <div class="flex flex-col gap-20 container mx-auto">
             <div
               class="flex flex-col gap-2.5 text-center lg:text-left lg:w-2/5"
@@ -408,18 +406,59 @@
       <section
         id="Testimonials"
         aria-label="Testimonials"
-        class="flex items-center justify-between container mx-auto pt-30"
+        class="flex items-center justify-between gap-56 container mx-auto py-30"
       >
-        <aside></aside>
-        <img
-          src="https://images.pexels.com/photos/24233283/pexels-photo-24233283.jpeg"
-          alt=""
-          class="w-[400px] rounded-2xl"
-        />
+        <aside
+          class="flex flex-col gap-12 transition-opacity duration-300 ease-in-out w-1/2"
+          id="carousel-content"
+        >
+          <div class="flex gap-1.5" id="carousel-rating">
+            <i
+              data-lucide="star"
+              class="relative top-px size-7 text-yellow-500 transition-opacity duration-300"
+              fill="#f0b100"
+            ></i>
+            <i
+              data-lucide="star"
+              class="relative top-px size-7 text-yellow-500 transition-opacity duration-300"
+              fill="#f0b100"
+            ></i>
+            <i
+              data-lucide="star"
+              class="relative top-px size-7 text-yellow-500 transition-opacity duration-300"
+              fill="#f0b100"
+            ></i>
+            <i
+              data-lucide="star"
+              class="relative top-px size-7 text-yellow-500 transition-opacity duration-300"
+              fill="#f0b100"
+            ></i>
+            <i
+              data-lucide="star"
+              class="relative top-px size-7 text-yellow-500 transition-opacity duration-300"
+              fill="#f0b100"
+            ></i>
+          </div>
+          <p class="text-4xl min-h-[160px]" id="carousel-testimonial"></p>
+          <div class="flex flex-col">
+            <span class="text-xl font-medium" id="carousel-author"></span>
+            <p
+              class="text-md text-neutral-500"
+              id="carousel-role-enterprise"
+            ></p>
+          </div>
+        </aside>
+
+        <div
+          class="flex justify-between gap-4 p-4 cursor-pointer min-w-[450px] h-[600px] rounded-2xl bg-center bg-cover bg-neutral-300 transition-all duration-500 ease-in-out"
+          id="carousel-indicator"
+        ></div>
       </section>
     </main>
+    <footer></footer>
     <script>
       lucide.createIcons();
     </script>
+    <script src="./src/carousel.js"></script>
   </body>
 </html>
